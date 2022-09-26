@@ -12,7 +12,7 @@ public class Burger {
         isItBurger();
         firsQuestion();
         secondQuestion();
-        FinalConstructorOfBurger();
+        finalConstructorOfBurger();
     }
 
     private static void isItBurger() {
@@ -36,7 +36,7 @@ public class Burger {
         if (firstAnswer.equalsIgnoreCase("Yes")) {
             addComponents();
         } else if (firstAnswer.equalsIgnoreCase("No")) {
-            FinalConstructorOfBurger();
+            finalConstructorOfBurger();
             System.exit(0);
         } else {
             System.out.println("I'm sorry. I didn't understand your answer. Try again");
@@ -82,7 +82,7 @@ public class Burger {
         if (secondAnswer.equalsIgnoreCase("Yes")) {
             addComponents();
         } else if (secondAnswer.equalsIgnoreCase("No")) {
-            FinalConstructorOfBurger();
+            finalConstructorOfBurger();
             System.exit(0);
         } else {
             System.out.println("I'm sorry. I didn't understand your answer. Try again");
@@ -90,7 +90,7 @@ public class Burger {
         }
     }
 
-    private static void FinalConstructorOfBurger() {
+    private static void finalConstructorOfBurger() {
         switch (constructorOfBurger.size()) {
             case 1 -> {
                 System.out.println("You order: " + constructorOfBurger.get(0) + ".");
