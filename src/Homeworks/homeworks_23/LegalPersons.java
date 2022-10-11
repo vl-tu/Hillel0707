@@ -1,4 +1,4 @@
-package Homeworks.homeworks_22;
+package Homeworks.homeworks_23;
 
 public class LegalPersons extends Client {
 
